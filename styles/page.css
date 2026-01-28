@@ -1,0 +1,50 @@
+/* HERO */
+
+.hero {
+	position: relative;
+	background: #fff;
+}
+
+.hero::before {
+	content: '';
+	position: absolute;
+	top: -1px;
+	width: 100%;
+	height: 90%;
+	background: var(--color-primary);
+	clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+	z-index: 0;
+}
+
+.hero__body {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: start;
+}
+
+.hero__leftSide_title {
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 120%;
+	color: #fff;
+}
+
+.hero__leftSide_link {
+	margin: 40px 0 80px;
+}
+
+.hero__companies {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	column-gap: 18px;
+}
+
+.hero__rightSide {
+	margin-right: -80px;
+}
+
+.d {
+	background: var(--color-primary);
+}
