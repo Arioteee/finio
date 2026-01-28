@@ -1,0 +1,48 @@
+:root {
+	/* Text */
+	--color-primary: #357efe;
+	--color-primary-link: rgba(255, 255, 255, 0.8);
+	--color-active: #fff;
+
+	/* BG */
+	--bg-white: #fff;
+
+	/* Border */
+	--border-34: 34px;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 140%;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+.container {
+	max-width: calc(1392px + 48px);
+	margin: 0 auto;
+	padding: 0 24px;
+	overflow: hidden;
+}
+
+.active {
+	color: var(--color-active) !important;
+}
