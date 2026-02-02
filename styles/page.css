@@ -163,3 +163,124 @@
 		max-width: 50%;
 	}
 }
+
+/*	ADVANTAGES */
+
+.advantages {
+	padding: 80px 0 0;
+}
+
+.advantages__body_shortList {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 65px;
+
+	padding-bottom: 80px;
+}
+
+.advantages__body_short_item {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 120%;
+	color: #000;
+}
+
+.advantages__body_fullList_accounting {
+	display: flex;
+	align-items: center;
+	gap: 60px;
+	width: 100%;
+	padding: 80px 0;
+
+	border-top: 1px solid rgba(78, 93, 124, 0.08);
+}
+
+.advantages__body_fullList_accounting:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.advantages__body_fullList_text {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: start;
+	width: 50%;
+}
+
+.advantages__body_fullList_accounting img {
+	width: 50%;
+}
+
+.advantages__body_fullList_title {
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 120%;
+	color: #000;
+}
+
+.advantages__body_fullList_description {
+	margin-top: 28px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 140%;
+	color: rgba(78, 93, 124, 0.5);
+}
+
+@media (max-width: 1125px) {
+	.advantages__body_shortList {
+		gap: 32px;
+	}
+
+	.advantages__body_short_item {
+		font-weight: 600;
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 960px) {
+	.advantages {
+		padding: 100px 0 0;
+	}
+
+	.advantages__body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.advantages__body_shortList {
+		flex-direction: column;
+		justify-content: center;
+		max-width: 328px;
+	}
+
+	.advantages__body_short_item {
+		gap: 24px;
+	}
+
+	.advantages__body_short_item img {
+		width: 48px;
+		height: 48px;
+	}
+
+	.advantages__body_fullList_title {
+		font-size: 32px;
+	}
+
+	.advantages__body_fullList_description {
+		margin-top: 14px;
+	}
+}
+
+@media (max-width: 860px) {
+	.advantages__body_fullList_accounting,
+	.advantages__body_fullList_accounting:nth-child(even) {
+		flex-direction: column-reverse;
+	}
+
+	.advantages__body_fullList_text,
+	.advantages__body_fullList_accounting img {
+		width: 100%;
+	}
+}
