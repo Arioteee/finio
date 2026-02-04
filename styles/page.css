@@ -221,10 +221,6 @@
 
 .advantages__body_fullList_description {
 	margin-top: 28px;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 140%;
-	color: rgba(78, 93, 124, 0.5);
 }
 
 @media (max-width: 1125px) {
