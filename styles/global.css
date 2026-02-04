@@ -9,6 +9,7 @@
 
 	/* Border */
 	--border-34: 34px;
+	--border-grayline: 1px solid rgba(78, 93, 124, 0.08);
 }
 
 * {
