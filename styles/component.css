@@ -19,3 +19,10 @@
 	justify-content: space-between;
 	gap: 16px;
 }
+
+.standart-text-gray {
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 140%;
+	color: rgba(78, 93, 124, 0.5);
+}
