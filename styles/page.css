@@ -446,3 +446,54 @@
 		width: 100%;
 	}
 }
+
+/* MOBVERSION */
+
+.mobversion {
+	padding: 80px 0 120px;
+}
+
+.mobversion__body {
+}
+
+.mobversion__body_title {
+	font-weight: 600;
+	font-size: var(--fontSize-title-48);
+	line-height: var(--line-height-title);
+	text-align: center;
+	color: #000;
+}
+
+.mobversion__body_description {
+	text-align: center;
+	margin: 24px 0 40px;
+}
+
+.mobversion__body_img {
+	width: 100%;
+	padding: 0 132px;
+}
+
+@media (max-width: 1024px) {
+	.mobversion__body_img {
+		padding: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.mobversion__body_title {
+		font-size: var(--fontSize-title-36);
+	}
+}
+
+@media (max-width: 580px) {
+	.mobversion__body_img {
+	}
+}
+
+@media (max-width: 480px) {
+	.mobversion__body_title,
+	.mobversion__body_description {
+		text-align: left;
+	}
+}
