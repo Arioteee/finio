@@ -454,6 +454,8 @@
 }
 
 .mobversion__body {
+	position: relative;
+	padding: 0 24px;
 }
 
 .mobversion__body_title {
@@ -487,7 +489,16 @@
 }
 
 @media (max-width: 580px) {
+	.mobversion__body {
+		max-width: 580px;
+		margin: 0 auto;
+		padding: 0 24px;
+		overflow: hidden;
+	}
+
 	.mobversion__body_img {
+		width: 200%;
+		transform: translateX(-1%);
 	}
 }
 
