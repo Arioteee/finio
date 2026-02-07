@@ -183,7 +183,7 @@
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 120%;
-	color: #000;
+	color: var(--color-black);
 }
 
 .advantages__body_fullList_accounting {
@@ -216,7 +216,7 @@
 	font-weight: 600;
 	font-size: 40px;
 	line-height: 120%;
-	color: #000;
+	color: var(--color-black);
 }
 
 .advantages__body_fullList_description {
@@ -406,7 +406,7 @@
 	font-weight: 600;
 	font-size: 32px;
 	line-height: 120%;
-	color: #000;
+	color: var(--color-black);
 }
 
 @media (max-width: 1440px) {
@@ -463,7 +463,7 @@
 	font-size: var(--fontSize-title-48);
 	line-height: var(--line-height-title);
 	text-align: center;
-	color: #000;
+	color: var(--color-black);
 }
 
 .mobversion__body_description {
@@ -629,5 +629,192 @@
 
 	.support__body_contacts {
 		margin: 32px 0;
+	}
+}
+
+/* TARIFF */
+
+.tariff {
+	padding: 80px 0;
+}
+
+.tariff__body_title {
+	text-align: center;
+	font-weight: 600;
+	font-size: var(--fontSize-title-48);
+	line-height: var(--line-height-title);
+	color: var(--color-black);
+}
+
+.tariff__body_subtitle {
+	margin: 24px 0 40px;
+
+	text-align: center;
+	color: var(--color-basic-darkText);
+}
+
+.tariff__cards {
+	display: grid;
+	gap: 24px;
+	grid-template-columns: repeat(3, minmax(328px, 369px));
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
+.tariff__cards_item {
+	display: grid;
+	justify-content: space-between;
+	align-items: end;
+	grid-template-areas:
+		'benefit'
+		'title'
+		'description'
+		'price'
+		'button';
+	grid-template-rows: auto auto auto auto;
+	padding: 48px 40px;
+
+	border-radius: var(--border-8);
+	box-shadow: 0 0 32px 0 rgba(78, 93, 124, 0.16);
+}
+
+.tariff__cards_item_benefit {
+	grid-area: benefit;
+	margin-bottom: 16px;
+	max-width: 125px;
+	padding: 4px 16px;
+	align-self: end;
+
+	border-radius: var(--border-8);
+	background-color: var(--bg-green);
+	font-size: 15px;
+	color: #fff;
+}
+
+.tariff__cards_item_benefit span {
+	font-weight: 800;
+}
+
+.tariff__cards_item_title {
+	grid-area: title;
+	margin-bottom: 16px;
+
+	font-weight: 800;
+	font-size: 32px;
+	line-height: 120%;
+	color: var(--color-black);
+}
+
+.tariff__cards_item_description {
+	grid-area: description;
+	margin-bottom: 50px;
+
+	color: rgba(78, 93, 124, 0.5);
+}
+
+.item__price {
+	grid-area: price;
+	margin-bottom: 40px;
+	display: grid;
+	grid-template-columns: 160px 1fr;
+	align-items: center;
+	gap: 33px 18px;
+}
+
+.item__price_value,
+.item__price_cost {
+	line-height: 120%;
+	color: var(--color-lightGray);
+}
+
+.tariff__cards_item_try {
+	grid-area: button;
+	display: inline-block;
+	max-height: 48px;
+	padding: 12px 20px;
+	text-align: center;
+
+	border-radius: var(--border-47);
+	background-color: var(--color-primary);
+	text-decoration: none;
+	font-weight: 800;
+	color: #fff;
+}
+
+.difference {
+	margin-inline-end: auto;
+	margin-left: -16px;
+	padding: 8px 16px;
+
+	border-radius: var(--border-8);
+	background-color: var(--bg-orange);
+	font-weight: 700;
+	font-size: 17px;
+	color: #fff;
+}
+
+.no-benefit {
+	visibility: hidden;
+}
+
+.best-order {
+	background-color: var(--color-primary);
+	color: #fff;
+}
+
+@media (max-width: 1435px) {
+	.tariff__cards {
+		display: grid;
+		gap: 24px;
+		grid-template-columns: repeat(2, minmax(328px, 369px));
+		grid-template-rows: repeat(2, 1fr);
+		justify-content: center;
+		margin-bottom: 40px;
+	}
+}
+
+@media (max-width: 1045px) {
+	.tariff__cards {
+		display: grid;
+		gap: 24px;
+		grid-template-columns: repeat(1, minmax(328px, 369px));
+		grid-template-rows: repeat(3, 1fr);
+		justify-content: center;
+		margin-bottom: 40px;
+	}
+}
+
+@media (max-width: 655px) {
+	.no-benefit {
+		display: none;
+	}
+
+	.tariff__body_subtitle,
+	.tariff__body_title {
+		text-align: start;
+	}
+
+	.tariff__cards_item {
+		padding: 48px 24px;
+		justify-content: flex-start;
+		gap: 0;
+		margin-bottom: 40px;
+	}
+
+	.tariff__cards_item_title {
+		font-size: 32px;
+	}
+
+	.tariff__cards_item_description {
+		line-height: 120%;
+	}
+
+	.item__price {
+		line-height: 120%;
+	}
+
+	.tariff__cards_item_description,
+	.item__price {
+		margin-bottom: 32px;
 	}
 }
