@@ -21,8 +21,15 @@
 }
 
 .standart-text-gray {
-	font-weight: 500;
 	font-size: 18px;
-	line-height: 140%;
 	color: rgba(78, 93, 124, 0.5);
+}
+
+.standart-text-lightgray {
+	font-size: 17px;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.active-dot {
+	background: #fff;
 }
