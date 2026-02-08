@@ -1,15 +1,36 @@
 :root {
-	/* Text */
+	/* Text color*/
 	--color-primary: #357efe;
 	--color-primary-link: rgba(255, 255, 255, 0.8);
+	--color-basic-lightText: rgba(255, 255, 255, 0.8);
+	--color-basic-halfdarkText: rgba(255, 255, 255, 0.5);
+	--color-basic-darkText: rgba(78, 93, 124, 0.5);
 	--color-active: #fff;
+	--color-lightGray: #4e5d7c;
+	--color-black: #000;
+
+	/* Text size */
+	--fontSize-title-48: 48px;
+	--fontSize-title-40: 40px;
+	--fontSize-title-36: 36px;
+
+	/* Line-height */
+	--line-height-title: 120%;
+	--line-height-basicText: 140%;
 
 	/* BG */
 	--bg-white: #fff;
+	--bg-orange: #ffc736;
+	--bg-green: #1abc9c;
+	--bg-darkBlue: #1a1d25;
 
 	/* Border */
+	--border-8: 8px;
+	--border-16: 16px;
 	--border-34: 34px;
+	--border-47: 47px;
 	--border-grayline: 1px solid rgba(78, 93, 124, 0.08);
+	--border-grayline-footer: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 * {
